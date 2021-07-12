@@ -7,10 +7,11 @@ Exercises
 5. Make the ghosts smarter.
 """
 
+
 from random import choice
 from turtle import *
 
-from freegames import floor, vector
+from utils import floor, vector
 
 state = {'score': 0}
 path = Turtle(visible=False)
@@ -47,6 +48,7 @@ tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
 ]
 # fmt: on
+
 
 
 def square(x, y):
@@ -176,15 +178,3 @@ onkey(lambda: change(0, -5), 'Down')
 world()
 move()
 done()
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
